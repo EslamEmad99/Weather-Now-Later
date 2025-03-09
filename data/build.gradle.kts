@@ -32,6 +32,28 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    /**
+     * Using product flavors to create two different flavors (STG - LIVE)
+     * to simulate the REAL-WORLD project
+     * LIVE for the production version on app store
+     * STG for testing
+     */
+    flavorDimensions.add("environment")
+    productFlavors {
+        create("stg") {
+            dimension = "environment"
+            buildConfigField("String", "BASE_URL", "\"${project.properties["STG_BASE_URL"]}\"")
+        }
+        create("live") {
+            dimension = "environment"
+            buildConfigField("String", "BASE_URL", "\"${project.properties["LIVE_BASE_URL"]}\"")
+        }
+    }
 }
 
 dependencies {

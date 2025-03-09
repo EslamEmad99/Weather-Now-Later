@@ -1,4 +1,4 @@
-package com.example.weathernowlater.utils
+package com.example.core.utils
 
 object ApiKeyProvider {
     init {

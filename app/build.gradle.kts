@@ -36,6 +36,17 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    flavorDimensions.add("environment")
+    productFlavors {
+        create("stg") {
+            dimension = "environment"
+        }
+        create("live") {
+            dimension = "environment"
+        }
+    }
+
     buildFeatures {
         compose = true
     }
