@@ -19,3 +19,9 @@ object EndPointsParametersNamesConstants {
     const val METRIC = "metric"
 
 }
+
+object LocalDataStorageConstants{
+
+    const val RECENT_CITIES_TABLE_NAME = "recent_cities"
+
+}

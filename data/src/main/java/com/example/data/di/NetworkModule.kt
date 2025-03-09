@@ -1,7 +1,7 @@
 package com.example.data.di
 
 import com.example.data.BuildConfig
-import com.example.data.remote.WeatherApiService
+import com.example.data.remote.network.WeatherApiService
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module

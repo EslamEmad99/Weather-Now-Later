@@ -1,7 +1,7 @@
 package com.example.data.datasource.remote
 
-import com.example.data.remote.ForecastResponse
-import com.example.data.remote.GeocodingResponseItem
+import com.example.data.remote.models.ForecastResponse
+import com.example.data.remote.models.GeocodingResponseItem
 
 interface WeatherRemoteDataSource {
     suspend fun getCityCoordinates(cityName: String): List<GeocodingResponseItem>

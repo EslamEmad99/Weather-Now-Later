@@ -1,4 +1,4 @@
-package com.example.data.remote
+package com.example.data.remote.network
 
 import com.example.core.constants.EndPointsNamesConstants.GEO_CODING_ENDPOINT
 import com.example.core.constants.EndPointsNamesConstants.WEATHER_FORECAST_ENDPOINT
@@ -10,6 +10,8 @@ import com.example.core.constants.EndPointsParametersNamesConstants.LONGITUDE
 import com.example.core.constants.EndPointsParametersNamesConstants.LIMIT
 import com.example.core.constants.EndPointsParametersNamesConstants.METRIC
 import com.example.core.constants.EndPointsParametersNamesConstants.UNITS
+import com.example.data.remote.models.ForecastResponse
+import com.example.data.remote.models.GeocodingResponseItem
 import retrofit2.http.GET
 import retrofit2.http.Query
 

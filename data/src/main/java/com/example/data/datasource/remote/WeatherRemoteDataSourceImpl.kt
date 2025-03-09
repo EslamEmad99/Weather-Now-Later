@@ -1,9 +1,9 @@
 package com.example.data.datasource.remote
 
 import com.example.core.di.ApiKey
-import com.example.data.remote.ForecastResponse
-import com.example.data.remote.GeocodingResponseItem
-import com.example.data.remote.WeatherApiService
+import com.example.data.remote.models.ForecastResponse
+import com.example.data.remote.models.GeocodingResponseItem
+import com.example.data.remote.network.WeatherApiService
 import javax.inject.Inject
 
 class WeatherRemoteDataSourceImpl @Inject constructor(
